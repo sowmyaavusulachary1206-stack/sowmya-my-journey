@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8f4"><meta name="description" content="My Journey — an interactive digital storybook.">
+  <title>My Journey ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="puzzle.css"><link rel="stylesheet" href="aesthetic.css"><link rel="stylesheet" href="book.css"><link rel="stylesheet" href="album.css"><link rel="stylesheet" href="transitions.css"><link rel="stylesheet" href="cover-layout.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div><div class="floaties" aria-hidden="true"></div>
+  <header class="topbar"><a class="brand" href="#" id="homeLink"><span>✿</span> My Journey</a><button class="music-toggle" id="musicToggle" aria-label="Toggle music">♫ <span>Music off</span></button></header>
+  <main class="storybook-app">
+    <section class="cover-screen" id="coverScreen" aria-label="My Journey book cover">
+      <div class="cover-caption"><p class="eyebrow">a scrapbook of little moments</p><h1>Every little moment<br>becomes a <em>story</em>.</h1></div>
+      <div class="closed-book" id="closedBook"><div class="closed-pages"></div><div class="closed-cover"><span class="cover-flower">✿</span><span class="cover-sticker">♡</span><span class="cover-title">My<br><strong>Journey</strong></span><span class="cover-subtitle">memories, dreams & little adventures</span><span class="cover-ribbon"></span><span class="cover-spine"></span></div><span class="cover-bookmark"></span></div>
+      <button class="pill-button open-book-button" id="openBook">Tap to Open <span>♡</span></button><p class="cover-note">turn the page to begin ✧</p>
+    </section>
+    <section class="book-area" id="bookArea" aria-label="Journey storybook" hidden>
+      <div class="book-shell" id="bookShell">
+        <div class="book-spread" id="bookSpread"><article class="book-page left-page" id="leftPage"></article><article class="book-page right-page" id="rightPage"></article></div>
+        <div class="page-turner" id="pageTurner" aria-hidden="true"></div>
+        <div class="book-spine"></div>
+        <button class="page-arrow previous-arrow" id="previousPage" aria-label="Previous spread">←</button><button class="page-arrow next-arrow" id="nextPage" aria-label="Next spread">→</button>
+        <div class="book-footer"><button class="toc-shortcut" id="tocShortcut">☷ Contents</button><span id="spreadCounter">01 / 09</span><span class="book-footer-mark">My Journey ♡</span><button class="close-book-button" id="closeBook">Close book ↶</button></div>
+      </div>
+    </section>
+  </main>
+  <audio id="ambientAudio" loop src="assets/music/soft-piano.mp3"></audio>
+  <script src="data.js"></script><script src="app.js"></script>
+</body></html>
